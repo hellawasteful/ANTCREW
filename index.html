@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTCREW</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.jpeg" type="image/jpeg"> <!-- Adjusted line for the favicon -->
+    <style>
+        /* Add the additional CSS styles here */
+        /* Reset CSS */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: Futura, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-image: url('background.jpeg'); /* Set background image */
+            background-size: cover; /* Scale background image to cover entire background */
+            color: #ffffff;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #000000;
+            color: #333;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+            filter: invert(100%); /* Invert the logo */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+        }
+
+        nav ul li {
+            margin-right: 25px; /* Adjust spacing between menu items */
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255); /* Make button text black */
+            font-size: 18px;
+            transition: color 0.3s ease;
+            background-color: rgb(0, 0, 0); /* Set button background to white */
+            padding: 10px 20px; /* Increase button padding */
+            border-radius: 5px; /* Add button border radius */
+        }
+
+        nav ul li a:hover {
+            color: gray; /* Change button text color on hover */
+        }
+
+        /* Header Image Styles */
+        .header-image-container {
+            position: relative;
+            margin-top: 80px; /* Adjust according to header height */
+            padding-bottom: 20px; /* Add padding to separate image from menu */
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: calc(2vw + 60px); /* Adjusted font size to scale across the screen */
+            color: rgba(0, 0, 0, 0.8); /* Adjusted text color with 80% opacity */
+            z-index: 1;
+        }
+
+        /* Stylish Layer Between Image and Menu */
+        .header-image-container::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30px; /* Changed height to 30px */
+            background-color: black; /* Adjust line color */
+            z-index: 1;
+        }
+
+        /* Black Divider */
+        .black-divider {
+            height: 10px;
+            background-color: black;
+        }
+
+        /* Content Styles */
+        .content {
+            max-width: 800px;
+            margin: 150px auto 0; /* Adjust top margin */
+            padding: 20px;
+            overflow: hidden; /* Hide overflow content */
+            max-height: calc(100vh - 230px); /* Calculate max height to fit within viewport */
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 40px; /* Increase bottom margin */
+        }
+
+        h3 {
+            font-size: 23px;
+            margin-bottom: 20px; /* Increase bottom margin */
+        }
+
+        p {
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        /* Copyright Section Styles */
+        .copyright-section {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 999; /* Ensure it's above other content */
+        }
+
+        /* Copyright Text Styles */
+        .copyright-text {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="Logo" class="logo" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="support.html">SUPPORT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="black-divider"></div> <!-- Black dividing line -->
+    <div class="header-image-container">
+        <img src="background.jpeg" alt="Background Image" class="header-image">
+        <div class="header-text"></div>
+    </div>
+    <div class="content">
+        <!-- Your existing content -->
+    </div>
+    <div class="copyright-section">
+        <p class="copyright-text">&copy; 2024 ANTCREW LLC. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

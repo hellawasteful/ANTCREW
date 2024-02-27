@@ -1,0 +1,148 @@
+/* Combined CSS Styles */
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background2.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    color: #fff; /* Set text color to white */
+    position: relative; /* Set position to relative for containing absolute positioned elements */
+}
+
+.title-container {
+    position: fixed; /* Set position to fixed */
+    top: 0; /* Position at the top of the viewport */
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 20px 0; /* Adjust padding as needed */
+    box-sizing: border-box;
+    z-index: 999; /* Ensure the title container is above other content */
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif; /* Change font to Playfair Display */
+    text-transform: uppercase; /* Convert text to all caps */
+    color: #fff; /* Set text color to white */
+    margin: 0;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.logo {
+    width: 80px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+    filter: invert(100%); /* Invert the logo */
+    margin-top: 20px; /* Adjust the margin for top spacing */
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto 20px; /* Adjust top margin to create space for the title box */
+    padding: 0 20px;
+    position: relative; /* Set position to relative */
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px; /* Adjust the margin-top value as needed */
+}
+
+.product {
+    width: calc(33.33% - 10px);
+    background-color: rgba(255, 255, 255, 0); /* Set background color with opacity */
+    border: 1px solid #000; /* Set border color to black */
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure images fit within box */
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+.product:hover {
+    transform: scale(1.1); /* Zoom in by 10% on hover */
+}
+
+.product-image {
+    height: 350px; /* Set height to accommodate image */
+    background-color: #000; /* Set background color to black */
+    background-size: cover;
+    background-position: center;
+}
+
+.product-price {
+    text-align: center;
+    font-weight: bold;
+    color: #888; /* Set default price text color to gray */
+    font-size: 18px;
+    margin-top: 10px;
+    transition: color 0.3s; /* Add smooth transition effect */
+}
+
+.product:hover .product-price {
+    color: #fff; /* Set price text color to white on hover */
+}
+
+.back-container {
+    position: fixed; /* Position the container */
+    top: 20px; /* Distance from top */
+    right: 20px; /* Distance from right */
+    z-index: 999; /* Ensure the button is above other content */
+}
+
+.back-button {
+    display: inline-block;
+    width: 120px; /* Increased width */
+    height: 45px; /* Increased height */
+    line-height: 50px; /* Center text vertically */
+    background-color: transparent; /* Remove button background */
+    color: #fff; /* Set button text color to white */
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.7;
+    transition: color 0.3s; /* Add transition for text color change */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-weight: bold; /* Make text bold */
+}
+
+.back-button:hover {
+    color: #888; /* Set text color to grey on hover */
+}
+
+
+.product-image.turtleneck {
+    background-image: url('turtleneck.jpg'); /* Set background image to turtleneck.jpg */
+}
+
+/* Button styles */
+.buy-button {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #000;
+    color: #fff;
+}
